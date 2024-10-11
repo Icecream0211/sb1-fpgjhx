@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-mystical {
+  background-color: #1a1a2e;
+  background-image: url('~/app/assets/galaxy-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-family: 'Georgia', serif;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+.result-text {
+  font-family: 'Arial', sans-serif;
+  color: #e0e0e0;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+.input, .picker {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: #4a0e4e;
+  border-width: 1;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #4a0e4e, #6a2a6e);
+  color: #ffffff;
+}
+
+.submit-btn:active {
+  background: linear-gradient(to right, #6a2a6e, #8a4a8e);
+}

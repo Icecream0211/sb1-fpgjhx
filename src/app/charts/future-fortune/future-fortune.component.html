@@ -1,0 +1,16 @@
+<StackLayout>
+  <Label text="未来三年运势预测" class="chart-title"></Label>
+  <RadCartesianChart>
+    <LineSeries tkCartesianSeries [items]="chartData" categoryProperty="Year" valueProperty="Overall" color="#3F51B5"></LineSeries>
+    <LineSeries tkCartesianSeries [items]="chartData" categoryProperty="Year" valueProperty="Wealth" color="#4CAF50"></LineSeries>
+    <LineSeries tkCartesianSeries [items]="chartData" categoryProperty="Year" valueProperty="Health" color="#F44336"></LineSeries>
+    <LineSeries tkCartesianSeries [items]="chartData" categoryProperty="Year" valueProperty="Love" color="#FF4081"></LineSeries>
+    <RadCartesianChartGrid tkCartesianGrid></RadCartesianChartGrid>
+    <DateTimeCategoricalAxis tkCartesianHorizontalAxis></DateTimeCategoricalAxis>
+    <LinearAxis tkCartesianVerticalAxis minimum="0" maximum="10"></LinearAxis>
+  </RadCartesianChart>
+  <Label text="蓝色: 整体运势" class="chart-legend" color="#3F51B5"></Label>
+  <Label text="绿色: 财运" class="chart-legend" color="#4CAF50"></Label>
+  <Label text="红色: 健康" class="chart-legend" color="#F44336"></Label>
+  <Label text="粉色: 情感" class="chart-legend" color="#FF4081"></Label>
+</StackLayout>

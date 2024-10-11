@@ -1,0 +1,9 @@
+<StackLayout>
+  <Label text="喜用神与忌用神分布" class="chart-title"></Label>
+  <RadPieChart>
+    <PieSeries tkPieSeries [items]="chartData" valueProperty="Value" legendLabel="Element" labelProperty="Element"></PieSeries>
+    <RadLegendView tkPieLegend position="Top" title="五行元素"></RadLegendView>
+  </RadPieChart>
+  <Label [text]="'喜用神: ' + data.favorable" class="chart-legend" color="#4CAF50"></Label>
+  <Label [text]="'忌用神: ' + data.unfavorable" class="chart-legend" color="#F44336"></Label>
+</StackLayout>

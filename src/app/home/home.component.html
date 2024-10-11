@@ -1,0 +1,22 @@
+<GridLayout rows="auto, auto, auto, auto, *" class="p-6 bg-mystical">
+  <StackLayout row="0" class="form-group">
+    <Label text="出生时间" class="label"></Label>
+    <TextField [(ngModel)]="birthDateTime" hint="YYYY-MM-DD HH:MM" class="input"></TextField>
+  </StackLayout>
+  
+  <StackLayout row="1" class="form-group">
+    <Label text="出生城市" class="label"></Label>
+    <TextField [(ngModel)]="birthCity" hint="输入城市名" class="input"></TextField>
+  </StackLayout>
+  
+  <StackLayout row="2" class="form-group">
+    <Label text="性别" class="label"></Label>
+    <ListPicker [items]="['男', '女']" [(ngModel)]="gender" class="picker"></ListPicker>
+  </StackLayout>
+  
+  <Button row="3" text="揭开命运的面纱" (tap)="onSubmit()" class="submit-btn"></Button>
+  
+  <GridLayout row="4" class="stars-background">
+    <!-- Stars animation will be added here -->
+  </GridLayout>
+</GridLayout>

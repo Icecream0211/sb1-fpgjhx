@@ -1,0 +1,25 @@
+<GridLayout rows="auto, *, auto" columns="*, *, *" class="direction-color-container">
+  <Label text="方位与颜色配对" class="chart-title" row="0" col="0" colSpan="3"></Label>
+  
+  <StackLayout row="1" col="0" class="direction-item" [style.backgroundColor]="data.west.color">
+    <Label text="西" class="direction-label"></Label>
+    <Label [text]="data.west.meaning" class="direction-meaning" textWrap="true"></Label>
+  </StackLayout>
+  
+  <StackLayout row="1" col="1" class="direction-item" [style.backgroundColor]="data.center.color">
+    <Label text="中" class="direction-label"></Label>
+    <Label [text]="data.center.meaning" class="direction-meaning" textWrap="true"></Label>
+  </StackLayout>
+  
+  <StackLayout row="1" col="2" class="direction-item" [style.backgroundColor]="data.east.color">
+    <Label text="东" class="direction-label"></Label>
+    <Label [text]="data.east.meaning" class="direction-meaning" textWrap="true"></Label>
+  </StackLayout>
+  
+  <StackLayout row="2" col="0" colSpan="3" class="direction-item" [style.backgroundColor]="data.south.color">
+    <Label text="南" class="direction-label"></Label>
+    <Label [text]="data.south.meaning" class="direction-meaning" textWrap="true"></Label>
+  </StackLayout>
+  
+  <Label text="点击方位查看详细解释" class="chart-legend" row="3" col="0" colSpan="3"></Label>
+</GridLayout>

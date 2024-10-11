@@ -1,0 +1,138 @@
+.bg-mystical {
+  background-color: #1a1a2e;
+  background-image: url('~/app/assets/galaxy-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 28;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.cards-container {
+  margin-bottom: 30;
+}
+
+.card {
+  border-radius: 15;
+  padding: 20;
+  margin-bottom: 25;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 22;
+  font-weight: bold;
+  margin-bottom: 15;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  font-size: 16;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.birth-chart {
+  background: linear-gradient(to bottom right, #FFF5E5, #FFE0A6);
+}
+
+.decade-fortune {
+  background: linear-gradient(to bottom right, #E0F7FA, #A7FFEB);
+}
+
+.favorable-unfavorable {
+  background: linear-gradient(to bottom right, #F8EFFF, #CE9EFF);
+}
+
+.career-development {
+  background: linear-gradient(to bottom right, #D4BFFF, #9C6FFF);
+}
+
+.love-life {
+  background: linear-gradient(to bottom right, #FFD7D7, #FF9393);
+}
+
+.birth-chart .card-title,
+.birth-chart .card-text {
+  color: #8B4513;
+}
+
+.decade-fortune .card-title,
+.decade-fortune .card-text {
+  color: #006064;
+}
+
+.favorable-unfavorable .card-title,
+.favorable-unfavorable .card-text {
+  color: #4A148C;
+}
+
+.career-development .card-title,
+.career-development .card-text {
+  color: #311B92;
+}
+
+.love-life .card-title,
+.love-life .card-text {
+  color: #B71C1C;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.scroll-text {
+  animation-name: scrollText;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.share-btn {
+  background: linear-gradient(to right, #4a0e4e, #6a2a6e);
+  color: #ffffff;
+  font-size: 18;
+  font-weight: bold;
+  padding: 15;
+  border-radius: 25;
+}
+
+.tab-button {
+  font-size: 14;
+  padding: 10;
+  margin: 0 5;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 15;
+}
+
+.active-tab {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}
+
+.chart-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15;
+  padding: 20;
+  margin-bottom: 20;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scrollText {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}

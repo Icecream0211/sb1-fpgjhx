@@ -1,0 +1,12 @@
+<StackLayout>
+  <Label text="五行平衡雷达图" class="chart-title"></Label>
+  <RadRadarChart [series]="chartData">
+    <RadCartesianChartGrid tkRadarChartGrid></RadCartesianChartGrid>
+    <RadarSeries tkRadarChartSeries [items]="chartData" valueProperty="Value" categoryProperty="Element" [fillColor]="item.Color"></RadarSeries>
+  </RadRadarChart>
+  <Label [text]="'木: ' + data.wood + ' - 创造力与生机'" class="chart-legend" [style.color]="'#4CAF50'"></Label>
+  <Label [text]="'火: ' + data.fire + ' - 热情与活力'" class="chart-legend" [style.color]="'#FF5722'"></Label>
+  <Label [text]="'土: ' + data.earth + ' - 稳定与踏实'" class="chart-legend" [style.color]="'#FFC107'"></Label>
+  <Label [text]="'金: ' + data.metal + ' - 坚毅与果断'" class="chart-legend" [style.color]="'#9E9E9E'"></Label>
+  <Label [text]="'水: ' + data.water + ' - 智慧与适应'" class="chart-legend" [style.color]="'#2196F3'"></Label>
+</StackLayout>

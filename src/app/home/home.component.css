@@ -1,0 +1,50 @@
+.bg-mystical {
+  background-color: #1a1a2e;
+  background-image: url('~/app/assets/galaxy-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.form-group {
+  margin-bottom: 25;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 18;
+  margin-bottom: 8;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 16;
+  padding: 12;
+  border-radius: 8;
+  border-color: #4a0e4e;
+  border-width: 1;
+}
+
+.picker {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 16;
+  padding: 12;
+  border-radius: 8;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #4a0e4e, #6a2a6e);
+  color: #ffffff;
+  font-size: 18;
+  font-weight: bold;
+  padding: 15;
+  border-radius: 25;
+  margin-top: 30;
+}
+
+.stars-background {
+  opacity: 0.5;
+}

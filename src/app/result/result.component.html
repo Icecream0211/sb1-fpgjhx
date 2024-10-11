@@ -1,0 +1,14 @@
+<ScrollView class="bg-mystical">
+  <StackLayout class="p-6">
+    <Label text="八字分析结果" class="title mb-6"></Label>
+    
+    <GridLayout rows="auto, auto, auto, auto, auto" columns="*" class="cards-container">
+      <!-- 命盘分析 -->
+      <StackLayout row="0" class="card fade-in birth-chart">
+        <Label text="✨ 命盘分析 📜" class="card-title"></Label>
+        <Label [text]="analysis.birthChart" textWrap="true" class="card-text"></Label>
+      </StackLayout>
+
+      <!-- 大运解析 -->
+      <StackLayout row="1" class="card fade-in decade-fortune">
+        <Label

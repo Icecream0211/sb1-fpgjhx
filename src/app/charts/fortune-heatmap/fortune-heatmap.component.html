@@ -1,0 +1,10 @@
+<StackLayout>
+  <Label text="运势热力图" class="chart-title"></Label>
+  <RadCartesianChart>
+    <CategoricalAxis tkCartesianHorizontalAxis></CategoricalAxis>
+    <CategoricalAxis tkCartesianVerticalAxis></CategoricalAxis>
+    <RadCartesianChartGrid tkCartesianGrid horizontalLinesVisible="true" verticalLinesVisible="true"></RadCartesianChartGrid>
+    <HeatmapSeries tkCartesianSeries [items]="chartData" valueProperty="Fortune" xProperty="Month" yProperty="Year" minimum="0" maximum="10"></HeatmapSeries>
+  </RadCartesianChart>
+  <Label text="深色表示运势较强，浅色表示运势较弱" class="chart-legend"></Label>
+</StackLayout>
